@@ -1,0 +1,11 @@
+[Unit]
+Description=OLAX F90 LTE band health check
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Ryoku/fixes/olax-f90-band-manager
+EnvironmentFile=-%h/.config/f90-band-manager/env
+ExecStart=%h/Ryoku/fixes/olax-f90-band-manager/f90-band auto --allow-disruption
+TimeoutStartSec=30min

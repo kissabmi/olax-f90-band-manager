@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+results/
+state/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+*.log
+# Local work history, modem captures, diagnostics and indexes.
+.autopilot/
+.prowl/
+.prowl-setup.lock
+scripts/with-olax-vpn-route

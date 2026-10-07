@@ -1,0 +1,9 @@
+[project]
+name = "olax-f90-band-manager"
+version = "0.1.0"
+description = "Safe LTE band benchmarking and selection for OLAX F90"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

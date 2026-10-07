@@ -1,0 +1,12 @@
+[Unit]
+Description=Run OLAX F90 LTE band health check every 10 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=10min
+Persistent=true
+Unit=f90-band-manager.service
+
+[Install]
+WantedBy=timers.target
+
